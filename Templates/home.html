@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <h1>Upload document or ask a question</h1>
+    <div>
+        <form action="/upload" method="get">
+            <button type="submit">Upload Document</button>
+        </form>
+        <form action="/ask" method="get">
+            <button type="submit">Ask a Question</button>
+        </form>
+    </div>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html>

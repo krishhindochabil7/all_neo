@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>Upload Filepath or Enter a Question</h1>
+
+    <form action="/process" method="post">
+        <label for="input_data">Input:</label>
+        <input type="text" id="input_data" name="input_data" required>
+
+        <button type="submit" name="action" value="Submit">Submit</button>
+        <button type="submit" name="action" value="End Process">End Process</button>
+    </form>
+</body>
+</html>

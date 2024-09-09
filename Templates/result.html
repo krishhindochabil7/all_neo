@@ -1,0 +1,155 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .graph-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .graph-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Query Results</h1>
+        <h2>Final Data:</h2>
+        <pre>{{ final_data }}</pre>
+
+        <h2>Generated Cypher Query:</h2>
+        <pre>{{ cypher_query }}</pre>
+
+        <div class="graph-container">
+            <h2>Full Graph</h2>
+            <img src="/images/Full_graph_image.png" alt="Full Graph">
+        </div>
+
+        <div class="graph-container">
+            <h2>Sub Graph</h2>
+            <img src="/images/Sub_graph_image.png" alt="Sub Graph">
+        </div>
+
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Results</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: left; /* Ensure headings are left-aligned */
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .graph-container {
+            margin-top: 20px;
+        }
+        .graph-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            text-align: left; /* Ensure output text is left-aligned */
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            white-space: pre-wrap; /* Preserve formatting */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Query Results</h1>
+        <h2>Final Data:</h2>
+        <pre>{{ final_data }}</pre>
+
+        <h2>Generated Cypher Query:</h2>
+        <pre>{{ cypher_query }}</pre>
+
+        <div class="graph-container">
+            <h2>Full Graph</h2>
+            <img src="/images/Full_graph_image.png" alt="Full Graph">
+        </div>
+
+        <div class="graph-container">
+            <h2>Sub Graph</h2>
+            <img src="/images/sub_graph_image.png" alt="Sub Graph">
+        </div>
+
+        <a href="/" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
